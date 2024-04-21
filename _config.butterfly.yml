@@ -9,15 +9,15 @@ nav:
 
 # Menu 目錄
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
-  # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
-  # About: /about/ || fas fa-heart
+  Home: / || fa-solid fa-house
+  Archives: /archives/ || fa-solid fa-box-archive
+  Tags: /tags/ || fa-solid fa-tags
+  Categories: /categories/ || fa-solid fa-folder-open
+  List||fas fa-list:
+    Music: /music/ || fas fa-music
+    Movie: /movies/ || fas fa-video
+  Link: /link/ || fas fa-link
+  About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -33,7 +33,7 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  fab fa-github: https://github.com/gomagom || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # Image (圖片設置)
@@ -54,7 +54,7 @@ disable_top_img: false
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: 'linear-gradient(20deg, #0062be,#925696, #cc426e, #fb0347)'
 
 # The banner image of archive page
 archive_img:
@@ -128,7 +128,7 @@ anchor:
   # when you scroll, the URL will update according to header id.
   auto_update: false
   # Click the headline to scroll and update the anchor
-  click_to_scroll: false
+  click_to_scroll: true
 
 # figcaption (圖片描述文字)
 photofigcaption: false
@@ -149,12 +149,12 @@ toc:
   post: true
   page: false
   number: true
-  expand: false
-  style_simple: false # for post
+  expand: true
+  style_simple: true # for post
   scroll_percent: true
 
 post_copyright:
-  enable: true
+  enable: false
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
@@ -207,7 +207,7 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2024
   custom_text:
   copyright: true # Copyright of theme and framework
 
@@ -229,9 +229,9 @@ aside:
     description:
     button:
       enable: true
-      icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      icon: fab fa-x-twitter
+      text: フォローする
+      link: https://x.com/gomatamago_0
   card_announcement:
     enable: true
     content: This is my Blog
@@ -260,7 +260,7 @@ aside:
     limit: 8 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
   card_webinfo:
-    enable: true
+    enable: false
     post_count: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
@@ -273,9 +273,9 @@ aside:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -332,9 +332,9 @@ rightside_scroll_percent: false
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
 # Don't repeat 不要重複
 rightside_item_order:
-  enable: false
-  hide: # readmode,translate,darkmode,hideAside
-  show: # toc,chat,comment
+  enable: true
+  hide: readmode,translate,hideAside
+  show: darkmode,toc
 
 # Math (數學)
 # --------------------------------------
@@ -389,14 +389,14 @@ docsearch:
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  enable: false
+  sites: facebook,twitter
 
 # AddToAny
 # https://www.addtoany.com/
 addtoany:
-  enable: false
-  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
+  enable: true
+  item: x,facebook,copy_link
 
 # Comments System
 # --------------------------------------
@@ -687,7 +687,7 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
@@ -722,7 +722,7 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
   title-prefix-icon: # '\f0c1'
   title-prefix-icon-color: # '#F47466'
@@ -841,7 +841,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
@@ -863,7 +863,7 @@ snackbar:
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: false
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
