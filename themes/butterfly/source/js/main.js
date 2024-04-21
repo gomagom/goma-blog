@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const isShowPercent = GLOBAL_CONFIG.percent.rightside
 
     // 當滾動條小于 56 的時候
-    if (document.body.scrollHeight <= innerHeight) {
+    if (document.body.scrollHeight >= innerHeight) {
       $rightside.classList.add('rightside-show')
       return
     }

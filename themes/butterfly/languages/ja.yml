@@ -95,14 +95,14 @@ donate: Sponsor
 share: Share
 
 rightside:
-  readmode_title: Read Mode
+  readmode_title: リードモード
   translate_title: Toggle Between Traditional Chinese And Simplified Chinese
   night_mode_title: ライトモード/ダークモード
   back_to_top: トップへ
   toc: 目次
   scroll_to_comment: コメントへ
   setting: Setting
-  aside: Toggle between Single-column and Double-column
+  aside: シングルカラムとダブルカラムの切り替え
   chat: Chat
 
 copy_copyright:
